@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>SenseiCloud — Developer Dashboard</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0d1117;color:#c9d1d9}
+    nav{background:#161b22;border-bottom:1px solid #21262d;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
+    .logo{font-size:1.3rem;font-weight:700;color:#fff}
+    .logo span{color:#58a6ff}
+    nav ul{list-style:none;display:flex;gap:1.5rem}
+    nav a{color:#8b949e;text-decoration:none;font-size:.875rem;transition:color .2s}
+    nav a:hover{color:#c9d1d9}
+    .hero{padding:4rem 2rem;text-align:center;background:linear-gradient(180deg,#161b22 0%,#0d1117 100%)}
+    .hero h1{font-size:2.5rem;font-weight:800;color:#fff;margin-bottom:.75rem}
+    .hero h1 span{color:#58a6ff}
+    .hero p{color:#8b949e;max-width:480px;margin:0 auto 2rem;line-height:1.6}
+    .btn{background:#238636;color:#fff;padding:.65rem 1.5rem;border-radius:6px;border:1px solid #2ea043;font-size:.9rem;cursor:pointer;text-decoration:none;display:inline-block}
+    .btn:hover{background:#2ea043}
+    .stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;max-width:900px;margin:3rem auto;padding:0 2rem}
+    .stat-card{background:#161b22;border:1px solid #21262d;border-radius:8px;padding:1.5rem}
+    .stat-card .label{color:#8b949e;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem}
+    .stat-card .value{font-size:1.8rem;font-weight:700;color:#fff}
+    .stat-card .sub{color:#3fb950;font-size:.8rem;margin-top:.25rem}
+    .section{max-width:900px;margin:0 auto;padding:2rem}
+    .section h2{color:#fff;margin-bottom:1rem;font-size:1.1rem}
+    .feature-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+    .feature-list li{background:#161b22;border:1px solid #21262d;border-radius:6px;padding:.75rem 1rem;font-size:.875rem;color:#8b949e}
+    .feature-list li::before{content:'✓  ';color:#3fb950}
+    footer{border-top:1px solid #21262d;padding:1.5rem 2rem;text-align:center;color:#484f58;font-size:.8rem;margin-top:3rem}
+    .pill{background:#1f3a5f;border:1px solid #58a6ff33;color:#58a6ff;padding:.15rem .5rem;border-radius:4px;font-size:.7rem;vertical-align:middle;margin-left:.4rem}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Sensei<span>Cloud</span></div>
+    <ul>
+      <li><a href="/">Dashboard</a></li>
+      <li><a href="/api/components">Components API</a></li>
+      <li><a href="/robots.txt">robots.txt</a></li>
+      <li><a href="/_next/static/chunks/app-manifest.json">App Manifest</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Your Cloud,<br/><span>Supercharged</span></h1>
+    <p>SenseiCloud delivers real-time analytics and infrastructure management powered by Next.js 14 React Server Components.</p>
+    <a href="/api/components" class="btn">View API</a>
+  </div>
+
+  <div class="stats">
+    <div class="stat-card"><div class="label">Active Users</div><div class="value">1,284</div><div class="sub">↑ 12% this month</div></div>
+    <div class="stat-card"><div class="label">Revenue MRR</div><div class="value">$48,920</div><div class="sub">↑ 8% vs last month</div></div>
+    <div class="stat-card"><div class="label">Uptime</div><div class="value">99.9%</div><div class="sub">SLA met</div></div>
+    <div class="stat-card"><div class="label">API Requests</div><div class="value">2.1M</div><div class="sub">Last 24 hours</div></div>
+  </div>
+
+  <div class="section">
+    <h2>Platform Features <span class="pill">RSC Enabled</span></h2>
+    <ul class="feature-list">
+      <li>Server-side rendering with React Server Components</li>
+      <li>Real-time metrics via streaming RSC</li>
+      <li>Stripe billing integration</li>
+      <li>Role-based access control</li>
+      <li>Redis-backed session management</li>
+      <li>Automated source maps for debugging</li>
+    </ul>
+  </div>
+
+  <footer>
+    © 2025 SenseiCloud Inc. — Next to my sensei | Hacknight 2.0
+    <!-- Its not always about the flag | Sometimes its how we React to when we dont -->
+  </footer>
+</body>
+</html>
